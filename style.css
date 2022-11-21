@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Libre Franklin', sans-serif;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* height: 100vh; */
+    margin-top: 10px;
+    font-size: 16px;
+}
+.logo{
+    margin-top: 50px;
+}
+.header{
+    font-size: 40px;
+    color: hsl(0, 0%, 59%);
+}
+.addImage{
+    margin-bottom: 50px;
+    width: 60%;
+    height: 70vh;
+    margin-top: 50px;
+}
+form{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+form input{
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    color: hsl(223, 100%, 88%);
+    border: 1px solid hsl(223, 100%, 88%);
+    width: 70%;
+}
+::placeholder{
+    color:hsl(223, 100%, 88%)
+}
+form button{
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 20px;
+    border: 1px solid hsl(223, 87%, 63%);
+    width: 25%;
+    box-shadow: 1px 0px 5px hsl(223, 87%, 63%);
+}
+form button:hover{
+    background-color: hsl(223, 100%, 75%);
+    border: 1px solid hsl(223, 100%, 75%);
+}
+.socials button{
+    color: hsl(223, 87%, 63%);
+    font-size: 20px;
+    padding: 5px;
+    border: 1px solid hsl(223, 100%, 75%);
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+button:hover{
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+}
+.attribution{
+    text-align: center;
+    margin-top: 20px;
+}
+@media (max-width:768px) {
+    main{
+        /* height: 100vh; */
+        font-size: 14px;
+    }
+    .logo {
+        width: 30vw;
+    }
+    .header{
+        font-size: 25px;
+        margin-top: 30px;
+    }
+    form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    form input{
+        width: 80%;
+        margin-bottom: 10px;
+    }
+    form button{
+        width:80%;
+        padding: 15px;
+    }
+    .addImage{
+        width: 80%;
+        height: 35vh;
+    }
+    .socials{
+        margin-bottom: 30px;
+    }
+    .socials button{
+        font-size: 10px;
+        font-size: 10px;
+        width: 30px;
+        height: 30px;
+    }
+    .attribution{
+        font-size: 20px;
+        font-size: 15px;
+        padding: 10px;
+    }
+}
